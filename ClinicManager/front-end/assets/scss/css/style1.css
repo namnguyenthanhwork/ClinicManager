@@ -18,13 +18,14 @@ Author: Kamleshyadav
 11. testimonial
 12. footer
 ---------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -279,9 +280,11 @@ li.hc-home-new:after {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -603,7 +606,7 @@ li.hc-home-new:after {
 /* team start */
 
 .hc-team-box {
-    box-shadow: 0 0 20px 0 #eee;
+    background: #ededed;
     text-align: center;
     padding: 30px;
     border-radius: 10px;
@@ -611,6 +614,11 @@ li.hc-home-new:after {
     width: 100%;
     margin: 0 15px 30px;
     max-width: 332px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .hc-team-name {
@@ -701,6 +709,10 @@ li.hc-home-new:after {
 
 .hc-team-box:hover:after {
     width: 80%;
+}
+
+.hc-team-box:hover {
+    box-shadow: 3px 10px 20px 0 #cac7c7;
 }
 
 .hc-team-tab-list ul li {
@@ -1105,6 +1117,10 @@ li.hc-home-new:after {
 .hc-testi-nav .swiper-button-next:after {
     transform: rotate(225deg);
     right: -10px;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
 }
 
 /* testimonial end */
@@ -1112,7 +1128,12 @@ li.hc-home-new:after {
 /* footer start */
 
 .hc-footer {
-    background: #1f2732;
+    padding: 100px 0 0;
+    background-repeat: no-repeat;
+}
+
+.hc-footer-content {
+    padding-top: 230px;
 }
 
 .hc-footer-logo {
@@ -1126,8 +1147,6 @@ li.hc-home-new:after {
     margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    border-top: 1px solid #323d4c;
-    border-bottom: 1px solid #323d4c;
 }
 
 .hc-foot-contact-box h2,
@@ -1151,14 +1170,6 @@ li.hc-home-new:after {
 
 .hc-footer-links {
     padding-top: 40px;
-}
-
-.hc-footer-contact-list li {
-    border-right: 1px solid #323d4c;
-}
-
-.hc-footer-contact-list li:last-child {
-    border: none;
 }
 
 .hc-footer-links li {
@@ -1189,7 +1200,6 @@ li.hc-home-new:after {
 /* copyright start */
 
 .hc-copyright {
-    background: #283240;
     padding: 18px 0;
     text-align: center;
 }
@@ -1253,7 +1263,7 @@ li.hc-home-new:after {
     position: fixed;
     bottom: 50%;
     border-radius: 100%;
-    right: 100px;
+    right: 50px;
     cursor: pointer;
     z-index: 100;
     opacity: 0;
@@ -1296,6 +1306,7 @@ li.hc-home-new:after {
     0% {
         box-shadow: 0px 0px 0px 0px #fd9678;
     }
+
     100% {
         box-shadow: 0px 0px 0px 12px #fd9678;
         opacity: 0;
@@ -1341,6 +1352,7 @@ li.hc-home-new:after {
     from {
         stroke-dashoffset: 814;
     }
+
     to {
         stroke-dashoffset: -814;
     }
@@ -1354,6 +1366,7 @@ li.hc-home-new:after {
     .container {
         max-width: 1180px;
     }
+
     .hc-submenu {
         background: #fff;
         box-shadow: 0 0px 20px 0 rgb(0 0 0 / 3%);
@@ -1372,23 +1385,28 @@ li.hc-home-new:after {
         transition: 0.3s;
         transform: scaleY(0);
     }
+
     .hc-submenu li {
         display: block;
     }
+
     .hc-submenu li a {
         display: block;
         padding: 5px 15px;
     }
+
     .hc-navbar>ul>li:hover .hc-submenu {
         visibility: visible;
         opacity: 1;
         transform: scaleY(1);
     }
+
     .hc-navbar>ul>li {
         display: inline-block;
         margin-right: 20px;
         position: relative;
     }
+
     .hc-navbar>ul>li:last-child {
         margin-right: 0;
     }
@@ -1410,25 +1428,31 @@ li.hc-home-new:after {
         transition: 0.3s;
         ;
     }
+
     .hc-menu-toggle span:nth-child(3) {
         margin-bottom: 0px;
     }
+
     .hc-menu-toggle span:nth-child(2) {
         width: 12px;
         background: #1abc9c;
         margin-left: auto;
         margin-right: auto;
     }
+
     .hc-menu-toggle {
         width: 22px;
         text-align: center;
     }
+
     .hc-open-menu .hc-menu-toggle span:nth-child(3) {
         transform: translate(1px, -9px) rotate(48deg);
     }
+
     .hc-open-menu .hc-menu-toggle span:nth-child(1) {
         transform: translate(1px, 6px) rotate(-48deg);
     }
+
     .hc-open-menu .hc-menu-toggle span:nth-child(2) {
         transform: translateY(9px);
         width: 24px;
@@ -1437,9 +1461,11 @@ li.hc-home-new:after {
         background: #fd9678;
         border-radius: 5px;
     }
+
     .hc-main-head-flex {
         justify-content: flex-end;
     }
+
     .hc-navbar {
         position: fixed;
         top: 0;
@@ -1453,37 +1479,51 @@ li.hc-home-new:after {
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
         text-align: left;
     }
+
     .hc-open-menu .hc-navbar {
         left: 0;
     }
+
     .hc-navbar>ul li {
         border-bottom: 1px solid #eee;
         position: relative;
     }
+
     .hc-navbar>ul li:last-child {
         border-bottom: 0;
     }
+
     .hc-navbar>ul li a {
         padding: 15px;
         display: inline-block;
     }
+
     .hc-navbar ul.hc-submenu li:first-child {
         border-top: 1px solid #eee;
     }
+
     ul.hc-submenu {
         display: none;
     }
+
+    ul.hc-submenu li a {
+        margin-left: 20px;
+    }
+
     .hc-has-submenu:after {
         right: 15px;
         top: 23px;
         bottom: auto;
     }
+
     .hc-team-box {
         max-width: 280px;
     }
+
     .hc-banner-content {
         padding: 60px 0;
     }
+
     .hc-banner-content h1 {
         font-size: 40px;
     }
@@ -1493,18 +1533,23 @@ li.hc-home-new:after {
     .hc-map-address {
         width: auto;
     }
+
     .hc-about-content {
         padding-top: 50px;
     }
+
     .hc-team-box {
         max-width: 310px;
     }
+
     .hc-go-top {
         right: 50px;
     }
+
     .hc-banner-img {
         position: unset;
     }
+
     .hc-banner-shape,
     .hc-banner:after {
         display: none;
@@ -1512,50 +1557,63 @@ li.hc-home-new:after {
 }
 
 @media screen and (max-width:767px) {
+
     .hc-top-head-div,
     .hc-top-head-right {
         text-align: center;
     }
+
     .hc-footer-contact-list {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .hc-footer-contact-list li {
         border-right: 0px solid #323d4c;
         border-bottom: 1px solid #323d4c;
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
+
     .hc-footer-contact-list li:last-child {
         padding-bottom: 0;
         margin-bottom: 0;
     }
+
     .hc-main-head-flex {
         justify-content: center;
     }
+
     .hc-logo {
         text-align: center;
         margin-bottom: 10px;
     }
+
     .hc-blog-img img {
         width: 100%;
     }
+
     .hc-team-box {
         max-width: 100%;
         margin: 0 0px 30px;
     }
+
     .hc-spacer-bottom {
         padding-bottom: 60px;
     }
+
     .hc-spacer-top {
         padding-top: 60px;
     }
+
     .hc-blog {
         padding-bottom: 10px;
     }
+
     .hc-service,
     .hc-team {
         padding-bottom: 30px;
     }
+
     .hc-map-box {
         margin-bottom: 50px;
     }
@@ -1566,36 +1624,46 @@ li.hc-home-new:after {
         width: 80px;
         height: 80px;
     }
+
     .hc-heading {
         font-size: 30px;
     }
+
     .hc-go-top {
         width: 50px;
         height: 50px;
     }
+
     .hc-go-top svg {
         width: 15px;
         height: 15px;
     }
+
     .hc-heading-wrap.text-center .hc-sub-heading:before {
         margin-left: -45px;
     }
+
     .hc-sub-heading:after,
     .hc-heading-wrap.text-center .hc-sub-heading:before {
         width: 30px;
     }
+
     .hc-go-top.hc-go-top-show {
         bottom: 20px;
     }
+
     .hc-go-top {
         right: 20px;
     }
+
     .hc-tab-list li {
         margin-right: 15px;
     }
+
     .hc-tab-content {
         margin-top: 20px;
     }
+
     .hc-blog-data {
         width: 95%;
     }
